@@ -1,2 +1,1 @@
-# metal_card_falling
-Metal card falling sound effect
+Metal card falling sound effect replaces default steel card activation sound with metal pipe falling sound effect
