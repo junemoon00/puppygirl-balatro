@@ -6,7 +6,7 @@
 ----------------------------------------------
 ------------MOD CODE -------------------------
 function SMODS.INIT.steel_card()
-    if not SOURCES["steel_card_sound"] then
+    if not SOURCES["good_puppy"] then
         local steel_card_sounds = love.filesystem.getDirectoryItems("Mods/steel_card")
         for _, filename in ipairs(steel_card_sounds) do
             local extension = string.sub(filename, -4)
@@ -176,7 +176,7 @@ end
 
 local old_play_sound = play_sound
 function play_sound(sound_code, per, vol)
-    if sound_code == "steel_card_sound" then
+    if sound_code == "good_puppy" then
         if G.F_MUTE then return end
         if sound_code and G.SETTINGS.SOUND.volume > 0.001 then
             per = per or 1
