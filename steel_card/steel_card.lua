@@ -1,8 +1,8 @@
 --- STEAMODDED HEADER
---- MOD_NAME: Metal card falling sound effect
+--- MOD_NAME: Puppygirl Balatro
 --- MOD_ID: steel_card
---- MOD_AUTHOR: [muddie]
---- MOD_DESCRIPTION: Replaces default steel card activation sound with metal pipe falling sound effect
+--- MOD_AUTHOR: [junemoon00]
+--- MOD_DESCRIPTION: Replaces the steel card sound with a dog clicker. 
 ----------------------------------------------
 ------------MOD CODE -------------------------
 function SMODS.INIT.steel_card()
@@ -121,7 +121,7 @@ function card_eval_status_text(card, eval_type, amt, percent, dir, extra)
         end
         delay = delay*1.25
 
-        sound = "steel_card_sound"
+        sound = "good_puppy"
         
         if amt > 0 or amt < 0 then
             if extra and extra.instant then
